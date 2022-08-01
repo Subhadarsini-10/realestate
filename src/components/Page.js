@@ -88,8 +88,7 @@ export const Page = () => {
           <div className="col-11 mx-auto">
             <div className="row my-0">
               {items.map((elem) => {
-                const { id, p, name, image, category, price, description } =
-                  elem;
+                const { p, name, image, price, description } = elem;
 
                 return (
                   <div className="item1 col-12 col-md-8 col-lg-6 col-xl-4 my-3 mx-2">
@@ -107,11 +106,9 @@ export const Page = () => {
                         <div className="menu-price-book">
                           <div className="price-book-divide d-flex justify-content-between">
                             <h2>{price}</h2>
-                            <a href="">
-                              <button className="btn btn-success">
-                                |コ Popular
-                              </button>
-                            </a>
+                            <button className="btn btn-success">
+                              |コ Popular
+                            </button>
                           </div>
                           <p>{description}</p>
                         </div>
@@ -125,9 +122,7 @@ export const Page = () => {
         </div>
       </div>
 
-      <footer>
-        @All copyrights Reserved 2022
-      </footer>
+      <footer>@All copyrights Reserved 2022</footer>
     </>
   );
 };
